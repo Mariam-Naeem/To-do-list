@@ -1,0 +1,102 @@
+
+  body {
+     font-family: Arial, sans-serif;
+      margin: 0;
+       height: 100vh;
+        display: flex;
+         justify-content: center;
+          align-items: center;
+           background: linear-gradient(to bottom, #a1c4fd, #c2e9fb, #fdbb2d);
+         }
+   .container {
+     background-color: white; 
+     padding: 20px;
+      border-radius: 15px;
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        width: 300px; text-align: center;
+     } 
+        h1 { font-size: 24px; 
+            color: #333; 
+            display: inline-block; } 
+            .icon {
+                 float: right; 
+                 font-size: 24px;
+                  color: #ff8a65;
+                   position: relative;
+                    top: -5px; }
+                     input[type="text"] {
+                         width: 80%;
+                          padding: 10px; 
+                          border: 1px solid #ccc;
+                           border-radius: 25px;
+                            outline: none; } 
+                            
+                            button {    padding: 10px;
+background-color: #ff8a65;
+                            color: white;
+                            border: none;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            margin-left: 10px;
+                            width: 50px;
+                            height: 51px;
+                            position: relative;
+                            cursor: pointer;
+                            right: 35px;} 
+                         button:hover {
+                             background-color: #ff7043; }
+                             ul { 
+                              list-style-type: none; 
+                              padding: 0;
+                              margin-top: 20px;
+                              text-align: left;
+                            }
+                            
+                            li {
+                              cursor: pointer;
+                              padding: 10px;
+                              background-color: #f9f9f9;
+                              margin-bottom: 10px;
+                              border: 1px solid #ddd;
+                              border-radius: 25px; 
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              position: relative; /* إضافة هذه الخاصية */
+                            }
+                            
+                            li.active {
+                              text-decoration: line-through;
+                            
+                              color: gray;
+                            }
+                           
+
+li.active::before {
+  background-color: #ff7043;
+  
+}
+                            
+                            li::before {
+                              content: "";
+                              width: 10px; /* حجم النقطة */
+                              height: 10px; /* حجم النقطة */
+                              background-color: #fff;
+                              border: 2px solid #333;
+                              position: absolute;
+                              border-radius: 50%;
+                              top: 50%; /* وضعه في منتصف الـ li */
+                              left: -4px; /* تعديل المسافة من اليسار */
+                              transform: translateY(-50%); /* لضبط المركز العمودي */
+                            }                                         span {
+                                                 color: red; cursor: pointer; }
+                                                  span:hover { 
+                                                    color: darkred; } 
+  .first{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .data{
+    display: flex;
+  }
